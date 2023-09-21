@@ -128,6 +128,7 @@ public class Main {
         else System.out.println(NAME_NOT_EXIST);
     }
 
+
     private static void setEmail(Scanner in, ContactBook cBook) {
         String name;
         String email;
@@ -150,6 +151,9 @@ public class Main {
         }
         else System.out.println(BOOK_EMPTY);
     }
+
+
+
     private static void findContactByNumber(Scanner in, ContactBook cBook){
         //todo: check if when has the same number return the last occurrence
         //TODO: test with junit
@@ -161,9 +165,11 @@ public class Main {
     else{
         System.out.println(contact.getPhone());
         System.out.println(contact.getName());
-
         }
     }
+
+
+
     }
 
 
