@@ -93,4 +93,28 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+
+    private Contact findContactBy(int phoneNumber){
+         initializeIterator();
+         while(hasNext()){
+
+             Contact next = next();
+             if(next.getPhone() == phoneNumber)
+                 return next;
+         }
+
+        return null;
+    }
+
+
+
+    public Contact findByNumber(int phoneNumber){
+
+        Contact toReturn = findContactBy(phoneNumber);
+        return toReturn;
+
+
+
+    }
 }
+

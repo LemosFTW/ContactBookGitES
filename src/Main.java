@@ -150,4 +150,23 @@ public class Main {
         }
         else System.out.println(BOOK_EMPTY);
     }
-}
+    private static void findContactByNumber(Scanner in, ContactBook cBook){
+        //todo: check if when has the same number return the last occurrence
+        //TODO: test with junit
+        int phone = in.nextInt();
+        in.nextLine();
+        Contact contact = cBook.findByNumber(phone);
+    if( contact == null)
+        System.out.println("Phone number does not exist");
+    else{
+        System.out.println(contact.getPhone());
+        System.out.println(contact.getName());
+
+        }
+    }
+    }
+
+
+
+
+
