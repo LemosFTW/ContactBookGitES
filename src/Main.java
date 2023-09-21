@@ -56,6 +56,12 @@ public class Main {
                 case LIST_CONTACTS:
                     listAllContacts(cBook);
                     break;
+                case LOOKUP_CONTACT:
+                    findContactByNumber(in, cBook);
+                    break;
+                case PHONE_EQUALS_VERIFY:
+                    checkRepeats(cBook);
+                    break;
                 default:
                     System.out.println(COMMAND_ERROR);
             }
@@ -148,7 +154,6 @@ public class Main {
     }
 
     private static void findContactByNumber(Scanner in, ContactBook cBook){
-        //TODO: test with junit
         int phone = in.nextInt();
         in.nextLine();
         Contact contact = cBook.findByNumber(phone);
