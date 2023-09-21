@@ -15,7 +15,7 @@ public class Main {
     public static final String LIST_CONTACTS = "LC";
 
     public static final String LOOKUP_CONTACT = "GN";
-    public static final String PHONE_EQUALS_VERIFY = "EQ";
+    public static final String PHONE_EQUALS_VERIFY = "EP";
     public static final String QUIT = "Q";
 
     //Constantes que definem as mensagens para o utilizador
@@ -158,7 +158,7 @@ public class Main {
         in.nextLine();
         Contact contact = cBook.findByNumber(phone);
         if (contact == null)
-            System.out.println("Phone number does not exist");
+            System.out.println("Phone number does not exist.");
         else
             System.out.println(contact.getName());
     }
