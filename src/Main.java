@@ -125,6 +125,7 @@ public class Main {
         } else System.out.println(NAME_NOT_EXIST);
     }
 
+
     private static void setEmail(Scanner in, ContactBook cBook) {
         String name;
         String email;
@@ -146,7 +147,7 @@ public class Main {
         } else System.out.println(BOOK_EMPTY);
     }
 
-    private static void findContactByNumber(Scanner in, ContactBook cBook) {
+    private static void findContactByNumber(Scanner in, ContactBook cBook){
         //TODO: test with junit
         int phone = in.nextInt();
         in.nextLine();
@@ -156,6 +157,7 @@ public class Main {
         else
             System.out.println(contact.getName());
     }
+
 
     private static void checkRepeats(ContactBook cBook) {
         cBook.initializeIterator();
