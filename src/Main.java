@@ -169,8 +169,18 @@ public class Main {
     }
 
 
-
+    private static void checkRepeats(ContactBook cBook) {
+        cBook.initializeIterator();
+        while(cBook.hasNext()) {
+            int phoneNumber = cBook.next().getPhone();
+            if(cBook.countNumber(phoneNumber) != 1) {
+                System.out.println("There are contacts that share phone numbers.");
+                break;
+            }
+        }
+        System.out.println("All contacts have different phone numbers");
     }
+}
 
 
 
