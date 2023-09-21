@@ -113,7 +113,7 @@ public class ContactBook {
 
     public int countNumber(int phoneNr){
         int nr = 0;
-        for(int i = 0; i < contacts.length; i++){
+        for(int i = 0; i < counter; i++){
             if(phoneNr == contacts[i].getPhone()){
                 nr++;
             }
