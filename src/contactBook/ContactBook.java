@@ -116,5 +116,15 @@ public class ContactBook {
 
 
     }
+
+    public int countNumber(int phoneNr){
+        int nr = 0;
+        for(int i = 0; i < contacts.length; i++){
+            if(phoneNr == contacts[i].getPhone()){
+                nr++;
+            }
+        }
+        return nr;
+    }
 }
 
